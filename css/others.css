@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.about {
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #444;
+    padding-top: 40px;
+    margin-left: 30px;
+}
+
+.about h1 span,
+.cup-others h1 span {
+    display: inline-block;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+
+.ONLINE-SHOP .set .list,
+.ONLINE-SHOP .cup-others .list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
+    gap: 30px;
+    justify-content: center;
+
+}
+
+.ONLINE-SHOP .set .list img,
+.ONLINE-SHOP .cup-others .list img {
+    max-width: 400px;
+}

@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/*
+SP ～519px
+tab 520px～959px
+pc 960px～
+*/
+
+
+/*====================
+紅茶・緑茶のご注文
+=====================*/
+html {
+    font-size: 16px;
+}
+
+main h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.question_tea {
+    text-align: center;
+}
+
+.question_tea_list {
+    background-color: rgba(84, 75, 3, 0.3);
+    padding-bottom: 40px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+main .question_tea_list h3 {
+    font-size: 1.5rem;
+    padding: 40px 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 50px
+}
+
+main .question_tea_list h4 {
+    font-size: 2rem;
+    color: cadetblue;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+
+}
+
+@media screen and (min-width:960px) {
+    main .question_tea_list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .question_tea_list h4 {
+        font-size: 2.5rem;
+    }
+}
+
+/*=================min-width:960pxここまで=====================*/
+/*====================
+お問合せ
+=====================*/
+
+#form_wright {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0;
+    font-size: 1.5rem;
+}
+
+#form_wright span {
+    display: block;
+}
+
+#form_wright table {
+    /* border: 2px solid #1a1702; */
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+
+#form_wright table table,
+#form_wright table tr,
+#form_wright table th,
+#form_wright table td {
+    display: block;
+    padding: 10px;
+
+}
+
+#form_wright button {
+    padding: 20px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: rgba(84, 75, 3, 0.3);
+}
+
+@media screen and (min-width:960px) {
+    #form_wright table tr {
+        display: flex;
+    }
+
+    #form_wright table th {
+        width: 350px;
+    }
+
+    #form_wright table textarea {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+/*=================min-width:960pxここまで=====================*/

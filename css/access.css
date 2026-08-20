@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/*
+SP ～519px
+tab 520px～959px
+pc 960px～
+*/
+
+
+/*====================
+アクセス　
+=====================*/
+.page_title {
+    padding-bottom: 80px;
+}
+
+.access h3 {
+    padding-top: 50px;
+    font-size: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.access img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: auto;
+}
+
+.access_inner address {
+    justify-content: center;
+    padding-top: 20px;
+    margin-top: 50px;
+    padding-bottom: 40px;
+}
+
+.access_inner {
+    display: block;
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.access_inner dl dt {
+    padding-top: 30px;
+    padding-bottom: 32px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+.access_inner dl {
+    max-width: 500px;
+    width: 60%;
+    margin: 0 auto;
+    padding-left: 1.5em;
+    padding-bottom: 20px;
+}
+
+.map {
+    padding-bottom: 40px;
+}
+
+.access .map_google {
+    width: 450px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width:960px) {
+    .map_area {
+        display: flex;
+        gap: 20px;
+        width: 90%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .access img {
+        width: 45%;
+    }
+}
+
+/*=================min-width:960pxここまで=====================*/

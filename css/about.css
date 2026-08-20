@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/*
+SP ～519px
+tab 520px～959px
+pc 960px～
+*/
+
+
+/*====================
+お茶と紅茶のページのCSS
+=====================*/
+
+.main_inner {
+    background-color: rgba(217, 197, 102, 1);
+}
+
+.main_tea {
+    width: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+.about_sozai_inner,
+.about_tea_inner {
+    padding-bottom: 40px;
+}
+
+.about_sozai_img,
+.about_tea_img {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+    gap: 20px;
+}
+
+.about_sozai,
+.about_tea {
+    overflow: hidden;
+}
+
+.about_sozai_img .to_left,
+.about_tea_img .to_left {
+    transform: translateX(100vw);
+    transition: 0.5s;
+}
+
+.about_sozai_img .to_right,
+.about_tea_img .to_right {
+    transform: translateX(-100vw);
+    transition: 0.5s;
+}
+
+.about_sozai_img.on .to_right,
+.about_sozai_img.on .to_left,
+.about_tea_img.on .to_right,
+.about_tea_img.on .to_left {
+    transform: translateX(0);
+}
+
+/*====================
+紅茶-black tea-
+=====================*/
+main h2 {
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+
+.gallery {
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.gallery-image {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    margin-bottom: 30px;
+    flex: 1;
+    padding-top: 32px;
+}
+
+.gallery_content {
+    max-width: 100%;
+    width: 100%;
+}
+
+.gallery_thumbnails {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    align-content: start;
+
+}
+
+.gallery_thumbnails img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+@media screen and (min-width:519px) {
+    .gallery {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .gallery-image {
+        max-width: 50%;
+        margin-bottom: 0;
+    }
+
+    .gallery-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .gallery_content {
+        max-width: 45%;
+    }
+
+}
+
+/*=================min-width:960pxここまで=====================*/

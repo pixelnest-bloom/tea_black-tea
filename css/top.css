@@ -1,0 +1,41 @@
+@charset "UTF-8";
+@import url(../css/common.css);
+/*
+SP ～519px
+tab 520px～959px
+pc 960px～
+*/
+
+/*====================
+mv video
+=====================*/
+
+.mv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+}
+
+.bg_placeholder {
+    height: 350px;
+    background-color: transparent;
+}
+
+.cons {
+    background-color: transparent;
+    text-align: center;
+}
+
+.cons_com_before,
+.cons_com_after {
+
+    background-color: rgba(217, 197, 102, 1);
+}
+
+.main_tea {
+    background-color: rgba(217, 197, 102, 1);
+
+}
