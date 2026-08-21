@@ -11,4 +11,27 @@ markdown
 
 
 ## 4. 使い方 / インストール方法（Usage / Installation）
+```bash
+\$ git clone https://github.com/pixelnest-bloom/tea_black-tea.git
+```
+クローンしたプロジェクトのフォルダに移動します。
+```bash
+cd tea_black-tea
+```
+必要なパッケージ（部品）をインストールします。
+```bash
+npm install
+```
+アプリケーションを起動する。
+```bash
+npm start
+```
+
+## 5. 動作環境（Requirements）
+- OS: Windows 11
+- Javascript  
+※（ macOS ：動作確認はしていないため、動作の保証をしていません。）
+
+## 6. ライセンス（License）
+「MIT License」
 
