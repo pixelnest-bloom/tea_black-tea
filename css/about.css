@@ -81,6 +81,21 @@ main h2 {
     padding: 20px;
 }
 
+.gallery-title p {
+    font-size: 16px;
+
+}
+
+/* サムネイル側のコメントは表示しない*/
+.gallery_thumbnails .gallery-com p {
+    display: none;
+}
+
+/*メイン画面側のコメントは表示する*/
+.gallery-image .gallery-com {
+    display: block;
+}
+
 .gallery-image {
     max-width: 100%;
     height: auto;
@@ -89,6 +104,15 @@ main h2 {
     flex: 1;
     padding-top: 32px;
 }
+
+.c {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    background-color: aqua;
+}
+
+
 
 .gallery_content {
     max-width: 100%;

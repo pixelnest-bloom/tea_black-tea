@@ -47,15 +47,53 @@ for (target of targets) {
 
 const mainImage = document.querySelector('.gallery-image img');
 const thumbnails = document.querySelectorAll('.gallery_thumbnails img');
-const mainCaption = document.querySelector('.gallery-image figcaption');
-
+const mainCaption = document.querySelector('.gallery-image .gallery-title p');
+const galleryComs = document.querySelector('.gallery-com p');
 
 for (let i = 0; i < thumbnails.length; i++) {
     thumbnails[i].addEventListener('mouseover', (event) => {
+
+        console.log('mouseover発生');
+
+        //メイン画像を変更
         mainImage.src = event.target.src;
+        // メイン画像のタイトルを変更
         mainCaption.innerHTML = event.target.dataset.title;
 
-        // mainImage.animate({ opacity: [0, 1] }, 500)
+        //カーソルが載ったサムネイルのfigureを取得
+        const thumbnailFigure = event.target.closest('figure');
+        //そのfigureの中のコメントを取得
+        const comment = thumbnailFigure.querySelector('.gallery-com p');
+        //メイン画像の諸谷コメントを表示
+
+        galleryComs.textContent = comment.textContent;
+        console.log('表示先:', galleryComs);
+        console.log('入れた文字:', galleryComs.textContent);
+        console.log('表示状態:', JSON.stringify(getComputedStyle(galleryComs).display));
+        console.log('visibility:', JSON.stringify(getComputedStyle(galleryComs).visibility));
+        console.log('opacity:', JSON.stringify(getComputedStyle(galleryComs).opacity));
+
+
+        console.log('galleryComs:', galleryComs);
+        console.log('tagName:', galleryComs.tagName);
+        console.log('textContent:', galleryComs.textContent);
+        console.log('outerHTML:', galleryComs.outerHTML);
+
+        console.log(galleryComs.outerHTML);
+
+        console.log(getComputedStyle(galleryComs));
+
+
+
+
+
+        // galleryComs.textContent = event.target.dataset.comment;
+        // console.log(galleryComs[i].textContent);
+
+        // galleryComs.style.display = 'block';
 
     });
 }
+
+
+
