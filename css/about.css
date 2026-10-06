@@ -83,7 +83,7 @@ main h2 {
 
 .gallery-title p {
     font-size: 16px;
-
+    margin-top: 16px;
 }
 
 /* サムネイル側のコメントは表示しない*/
@@ -94,6 +94,12 @@ main h2 {
 /*メイン画面側のコメントは表示する*/
 .gallery-image .gallery-com {
     display: block;
+    width: 100%;
+    background-color: rgba(110, 81, 2, 0.2);
+    padding: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
 }
 
 .gallery-image {

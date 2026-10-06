@@ -67,30 +67,22 @@ for (let i = 0; i < thumbnails.length; i++) {
         //メイン画像の諸谷コメントを表示
 
         galleryComs.textContent = comment.textContent;
-        console.log('表示先:', galleryComs);
-        console.log('入れた文字:', galleryComs.textContent);
-        console.log('表示状態:', JSON.stringify(getComputedStyle(galleryComs).display));
-        console.log('visibility:', JSON.stringify(getComputedStyle(galleryComs).visibility));
-        console.log('opacity:', JSON.stringify(getComputedStyle(galleryComs).opacity));
+        // console.log('表示先:', galleryComs);
+        // console.log('入れた文字:', galleryComs.textContent);
+        // console.log('表示状態:', JSON.stringify(getComputedStyle(galleryComs).display));
+        // console.log('visibility:', JSON.stringify(getComputedStyle(galleryComs).visibility));
+        // console.log('opacity:', JSON.stringify(getComputedStyle(galleryComs).opacity));
 
 
-        console.log('galleryComs:', galleryComs);
-        console.log('tagName:', galleryComs.tagName);
-        console.log('textContent:', galleryComs.textContent);
-        console.log('outerHTML:', galleryComs.outerHTML);
+        // console.log('galleryComs:', galleryComs);
+        // console.log('tagName:', galleryComs.tagName);
+        // console.log('textContent:', galleryComs.textContent);
+        // console.log('outerHTML:', galleryComs.outerHTML);
 
-        console.log(galleryComs.outerHTML);
+        // console.log(galleryComs.outerHTML);
 
-        console.log(getComputedStyle(galleryComs));
+        // console.log(getComputedStyle(galleryComs));
 
-
-
-
-
-        // galleryComs.textContent = event.target.dataset.comment;
-        // console.log(galleryComs[i].textContent);
-
-        // galleryComs.style.display = 'block';
 
     });
 }
